@@ -1,9 +1,24 @@
+<div class="container">
+
 <h5>Angular Help</h5>
 <br>
-<label for="">Getting HTML INput Element</label>
-<br>
-<input type="text" class="form-constrol" #myValue>
-<br>
-<br>
-<button (click)= "getValue(myValue)" class="btn btn-primary mt-4" >Get it</button>
 
+<div class="row">  
+    <label for="">Getting HTML INput Element --> </label>
+    <input type="text" class="form-control" style="max-width: 100px" #myValue> 
+    <button (click)= "getValue(myValue)" class="btn btn-primary ml-4" >Get it Twisteed</button>
+</div>
+
+
+<br>
+<div class="row">
+<label >Getting Child Element --> </label>
+<input type="text" class="form-control mr-2 w-25" #myValue2>
+<button (click)= "getChild()" class="btn btn-primary" >Get View Child</button>
+</div>
+
+<br>
+<ng-content></ng-content>
+<br>
+
+</div>

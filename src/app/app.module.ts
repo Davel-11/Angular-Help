@@ -4,13 +4,17 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { AngularHelpComponent } from './angular-help/angular-help.component';
 
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+
+
 @NgModule({
   declarations: [
     AppComponent,
     AngularHelpComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    NgbModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
